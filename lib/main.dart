@@ -18,18 +18,17 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.add),
+          onPressed: () {
+            Navigator.pushNamed(context, '/second');
+          },
+        ),
         title: Text("Vidyavihar"),
         actions: [
           IconButton(
-            icon: const Icon(Icons.add),
-            onPressed: () {
-              Navigator.pushNamed(context, '/second');
-            },
-          ),
-          IconButton(
             icon: const Icon(Icons.menu),
             onPressed: () {
-              // Implement menu functionality here
             },
           ),
         ],
@@ -71,7 +70,6 @@ class Home extends StatelessWidget {
                   width: size.width,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Implement 5-day forecast functionality here
                     },
                     child: Text("5-day forecast", textAlign: TextAlign.center),
                   ),
