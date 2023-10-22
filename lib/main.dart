@@ -126,11 +126,11 @@ class SecondPage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Container(
-            margin: const EdgeInsets.all(10.0),
+            margin: const EdgeInsets.fromLTRB(10.0,5.0,10.0,10.0),
             padding: const EdgeInsets.all(18.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),
-              color: Colors.blue,
+              color: Colors.blueGrey,
             ),
             width: size.width,
             height: size.height / 9,
@@ -167,11 +167,11 @@ class SecondPage extends StatelessWidget {
           ),
           SizedBox(height: 0),
           Container(
-            margin: const EdgeInsets.all(10.0),
-            padding: const EdgeInsets.all(18.0),
+            margin: const EdgeInsets.fromLTRB(10.0,5.0,10.0,10.0),
+            padding: const EdgeInsets.all(19.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),
-              color: Colors.green,
+              color: Colors.blueGrey,
             ),
             width: size.width,
             height: size.height / 9,
